@@ -8,7 +8,7 @@ public class Script : MonoBehaviour
     public int añoFabricacion;
     public float kilometrosRecorridos;
     public int fechavtoVTV;
-    public int HC;
+    public float HC;
     int añoActual = 2025;
     int antiguedadAuto;
     float promedioKilometraje;
@@ -47,7 +47,7 @@ public class Script : MonoBehaviour
 
        if (HC < 5)
        {
-            Debug.Log("ERROR: Cantidad de HC menor a 5");
+            Debug.Log("ERROR: Cantidad de HC menor a 5ppm");
             Debug.Log("VTV no aprobada");
             return;
        }
